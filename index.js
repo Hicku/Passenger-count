@@ -1,8 +1,12 @@
-function save() {
-    let countStr = count + " - "
-    saveEl.textContenttStr
-    countEl.textContent = 0
-    count = 0
+let count = 0;
+
+let increaseCount = () => {
+    count = count + 1
+    countEl.innerHTML = count
 }
 
-console.log("Let's count people on the subway!")
+let incButton = document.getElementById("increment-btn")
+let countEl = document.getElementById("count-el")
+
+incButton.addEventListener("click", increaseCount)
+
